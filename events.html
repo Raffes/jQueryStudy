@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+    <script>
+        
+        $("document").ready(function(){
+            // evento de click
+            $("#textBox").on("click", whenMouseIsClicked);
+
+            //evento de passar o mouse
+            $("#textBox").on("mouseleave", whenMouseLeaves);
+
+            function whenMouseIsClicked() {
+                $("#textBox").html("<h1>You clicked me</h1>");
+                
+            }
+
+            function whenMouseLeaves() {
+                $("#textBox").html("<h1>Where  ya you goin?</h1>");
+            }
+
+        });
+    </script>
+
+<!-- CSS -->
+    <style>
+
+        #textBox {
+            width: 150px;
+            height: 150px;
+            border:  1px solid black;
+            background-color: aliceblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+<!-- <h1> Test 1</h1>
+
+<h1> Test 2</h1>
+
+<h1> Test 3</h1> -->
+
+<div id="textBox">
+</div>
+
+</body>
+</html>

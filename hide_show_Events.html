@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+    <script>
+        // esconde e aparecer elementos
+        $("document").ready(function(){
+            
+            $("#show").on("click", function(){
+                $("#textBox").show();
+            });
+
+            $("#hide").on("click", function(){
+                $("#textBox").hide();
+            });
+            
+
+        });
+    </script>
+
+<!-- CSS -->
+    <style>
+
+        #textBox {
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+<!-- <h1> Test 1</h1>
+
+<h1> Test 2</h1>
+
+<h1> Test 3</h1> -->
+
+<button id="show">Click to show</button>
+
+<button id="hide">Click to hide</button>
+
+<div id="textBox">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum amet cupiditate officia tempore autem debitis officiis harum, et eos suscipit ad evenitae quod natus!
+</div>
+
+</body>
+</html>

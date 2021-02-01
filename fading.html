@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+
+    <script>
+        // mostra um elemento depois de um tempo (3000)
+        $("document").ready(function(){
+            
+           $("#fade-in").on("click", function(){
+
+                $("#textBox").fadeIn(30000, function(){
+
+                    alert("I'm Fading in");
+
+                });
+
+           });
+
+           $("#fade-out").on("click", function(){
+
+                $("#textBox").fadeOut("fast", function(){
+
+                    alert("I'm Done Fading Out");
+
+            });
+
+});
+
+        });
+    </script>
+
+<!-- CSS -->
+    <style>
+        #textBox{
+            display: none;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    
+
+<!-- <h1> Test 1</h1>
+
+<h1> Test 2</h1>
+
+<h1> Test 3</h1> -->
+
+<a href="#" id="fade-in">Fade In</a>
+<a href="#" id="fade-out">Fade Out</a>
+
+<div id="textBox">
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum amet cupiditate officia tempore autem debitis officiis harum, et eos suscipit ad evenitae quod natus!
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum amet cupiditate officia tempore autem debitis officiis harum, et eos suscipit ad evenitae quod natus!
+    </p>
+    </div>
+
+</body>
+</html>
