@@ -6,25 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-
-    <script>
-        // Quando o documento estiver pronto executar essa função
-        //Coloque na tag h1 esse estilo
-        $("document").ready(function(){
-
-            $("h1:first").css("border","3px dotted green");
-
-            //vai trocar a msg dentro de uma div
-            var newText = $("<p>");
-
-            newText.append("<i>Just replaced a div</i>");
-
-            $("#headerNew").html(newText);
-
-        });
-    </script>
 
 <h1> Test 1</h1>
 
@@ -35,6 +16,10 @@
 <div id="headerNew">
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam fugiat consequatur exercitationem omnis cupiditate quis fugit illo ipsa cum quas culpa voluptates expedita optio enim, ipsum aut sunt, sint minima?
 </div>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="jquery/selector.js"></script>
 
 </body>
 </html>
