@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        // 
+        $("document").ready(function(){
+            //vai trocar o texto do paragrafo
+            $("#create_text").click(function(){
+                $("#container p:last").text("Batatinha quando nascer esparrama pelo chão :(")
+            })
+
+            //substitui o ultimo paragrafo pelo primeiro paragrafo
+            $("#create_variable").click(function(){
+                var newText = $("#container p:first");
+
+                $("#container p:last").html(newText);
+            })
+           
+        });
+    </script>
+
+<style>
+    /* CSS */
+
+    
+</style>
+
+</header> 
+
+<body>
+
+    <button id="create_text">Create Text</button> |
+    <button id="create_variable">Create Variable</button>
+
+    <div id="container">
+        <p>
+           1. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam fugiat consequatur exercitationem omnis cupiditate quis fugit illo ipsa cum quas culpa voluptates expedita optio enim, ipsum aut sunt, sint minima?
+        </p>
+    
+        <p>
+          2.  Lorem ipsum dolor, sit amet con sectetur adipisicing elit. Quisquam fugiat consequatur exercitationem omnis cupiditate quis fugit illo ipsa cum quas culpa voluptates expedita optio enim, ipsum aut sunt, sint minima?
+        </p>
+    
+        <p>
+          3.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam fugiat consequatur exercitationem omnis cupiditate quis fugit illo batata ipsa cum quas culpa voluptates expedita optio enim, ipsum aut sunt, sint minima?
+        </p>
+    
+        <p>
+          4.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam fugiat consequatur exercitationem omnis cupiditate quis fugit illo ipsa cum quas culpa voluptates expedita optio enim, ipsum aut sunt, sint minima?
+        </p>
+    </div>
+
+</body>
+</html>
